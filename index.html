@@ -1,0 +1,36 @@
+<!-- webpage hosting discard starter applet calculator -->
+
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sourdough Discard Converter</title> 
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+  
+<body>	
+	<div id='page-heading'><h1>Sourdough Discard Calculator</h1></div>
+	<div id='user-options' class='column left'>
+    	<label for="discard-amt">Discard Amount:</label>
+    	<br>
+    	<input type="number" id="discard-amt" value=4></input>
+    	<select name="discard-unit" id="discard-unit">
+    		<option value="cup">cup</option>
+    		<option value="tbsp" selected>tbsp</option>
+    		<option value="tsp">tsp</option>
+    	</select>
+    	<br><br>
+    	<label for="recipe-select">Select a recipe...</label>
+    	<br>
+    	<select name="recipe-select" id="recipe-select"></select>
+    </div>
+
+	<div id='recipe' class="column right"></div>
+    <!-- scripts -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="script-discard.js"></script>
+  </body>
+</html>
