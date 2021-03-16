@@ -13,18 +13,21 @@
 <body>	
 	<div id='page-heading'><h1>Sourdough Discard Calculator</h1></div>
 	<div id='user-options' class='column left'>
-    	<label for="discard-amt">Discard Amount:</label>
-    	<br>
-    	<input type="number" id="discard-amt" value=4></input>
-    	<select name="discard-unit" id="discard-unit">
-    		<option value="cup">cup</option>
-    		<option value="tbsp" selected>tbsp</option>
-    		<option value="tsp">tsp</option>
-    	</select>
-    	<br><br>
-    	<label for="recipe-select">Select a recipe...</label>
-    	<br>
-    	<select name="recipe-select" id="recipe-select"></select>
+    	<div>
+		<label for="discard-amt">Discard Amount:</label>
+    		<br>
+    		<input type="number" id="discard-amt" value=4></input>
+		<select name="discard-unit" id="discard-unit">
+			<option value="cup">cup</option>
+			<option value="tbsp" selected>tbsp</option>
+			<option value="tsp">tsp</option>
+		</select>
+	</div>
+	<div>
+		<label for="recipe-select">Select a recipe...</label>
+		<br>
+		<select name="recipe-select" id="recipe-select"></select>
+	</div>
     </div>
 
 	<div id='recipe' class="column right"></div>
