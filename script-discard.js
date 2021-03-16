@@ -309,7 +309,7 @@ $(document).ready(function() {
   updateDisplay();
   
   $("#recipe-select").selectmenu({
-    appendTo: "#recipe-select",
+    appendTo: "#user-options",
     change: function( event, data ) {
       //console.log("recipe selection changed to", data.item.value);
       selectedRecipe = recipes[data.item.value];
