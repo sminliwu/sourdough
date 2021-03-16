@@ -1,32 +1,23 @@
-body {
-	font-family: "Helvetica", "Helvetica Neue", sans-serif;
-}
-
+/* page-specific ID's */
 #discard-amt {
 	width: 4em;
 	text-align: right;
 }
 
-input, .ui-button, button {
-	display: inline-block;
-	margin: 5px;
-	padding: 8px;
-	padding-left: 15px;
-	border-width: 1px;
-	border-style: solid;
-	border-color: #444444;
-	border-radius: 5px;
-	background: #f6f6f6;
-}
 
 #recipe-select-button {
-	width: 80%;
+	width: 100%;
 	text-align: left;
 }
 
 #discard-unit {
 	border-style: none;
 	margin: 0px;
+}
+
+/* generic HTML */
+body {
+	font-family: "Helvetica", "Helvetica Neue", sans-serif;
 }
 
 .column {
@@ -59,4 +50,53 @@ td, th {
 	padding: 5px;
 	padding-left: 20px;
 	padding-bottom: 2px;
+}
+
+/* JQuery UI styling */
+input, .ui-button, button {
+	display: inline-block;
+	margin: 5px;
+	padding: 8px;
+	padding-left: 15px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #444444;
+	border-radius: 5px;
+	background: #f6f6f6;
+}
+
+.ui-menu {
+	padding:0px;
+	margin:auto;
+}
+
+.ui-menu-item-wrapper {
+    position: relative;
+    padding: 5px 1em 3px .5em;
+    width:60%
+}
+
+.ui-selectmenu-menu {
+	margin:auto;
+	display: inline-block;
+	border-color: #0005;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 5px;
+	background: #FFFFFF;
+}
+
+.ui-front {
+	width:80%;
+}
+
+.ui-menu-item {
+	list-style:none;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: 1px solid #003eff;
+    background: #007fff;
+    font-weight: normal;
+    color: #ffffff;
 }
